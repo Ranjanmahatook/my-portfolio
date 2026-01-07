@@ -19,6 +19,7 @@ const Skills = () => {
                 <div className="skill-card">Azure Cloud</div>
                  <div className="skill-card">Azure Cloud</div>
                   <div className="skill-card">Azure Cloud</div>
+                   <div className="skill-card">Kubernetes</div>
         </div>
       </div>
     </section>
