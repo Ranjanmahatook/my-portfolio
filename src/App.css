@@ -227,7 +227,7 @@ body {
 
 /* Move whole section on hover */
 .contact-section:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 /* ===== Headings ===== */
@@ -250,14 +250,9 @@ body {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 25px 60px #02010d2e;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Card hover effect */
-.contact-card:hover {
-    transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 35px 80px rgba(2, 2, 14, 0.28);
-}
+
 
 /* ===== Form Groups ===== */
 .form-group {
@@ -399,3 +394,14 @@ body {
   transform: scale(0.95);
 }
 
+/* Space between icons and form */
+.contact-icons-wrapper {
+  margin-bottom: 36px;
+}
+
+/* Icons row */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
