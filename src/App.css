@@ -66,7 +66,7 @@ body {
 .header {
   width: 100%;
   min-height: 240px;
-  background: linear-gradient(90deg, #5b6cff, #0b0f2b);
+  background: linear-gradient(90deg, #4460aa, #4460aa);
   display: flex;
   align-items: center;
 }
@@ -118,7 +118,7 @@ body {
 
 .skills-bg {
   width: 100%;
-  background: linear-gradient(135deg, #80e1d9, #d8e591);
+  background: linear-gradient(135deg, #ffffff, #f0f1ef);
   padding: 80px 0;
 }
 
@@ -141,7 +141,8 @@ body {
 }
 
 .skill-card {
-  background: white;
+  background: rgb(74, 89, 184);
+  color: #ffffff;
   padding: 18px 14px;        /* more horizontal padding */
   min-height: 50px;          /* controls height */
   border-radius: 14px;
@@ -151,16 +152,16 @@ body {
   justify-content: center;
 
   font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(206, 45, 45, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* Hover: zoom + soft glow */
 .skill-card:hover {
   transform: scale(1.08);
-  background: linear-gradient(135deg, #53cae4, #d6f175);
+  background: linear-gradient(135deg, #405fb3, #ffffff);
   box-shadow:
-    0 20px 45px rgba(80, 234, 53, 0.35),
-    0 0 30px rgba(199, 243, 53, 0.45);
+    0 20px 45px rgba(6, 6, 6, 0.35),
+    0 0 30px rgba(16, 17, 13, 0.45);
 }
 
 
@@ -169,6 +170,7 @@ body {
 .resume-section {
   padding: 80px 20px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .resume-btn {
@@ -215,7 +217,7 @@ body {
 
 /* ===== Card ===== */
 .contact-card {
-  background: linear-gradient(135deg, #bbefbb, #dbedbf);
+  background: linear-gradient(135deg, #ffffff, #6b81ed);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 25px 60px #02010d2e;
