@@ -1,3 +1,5 @@
+import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -28,19 +30,19 @@ const ContactForm = () => {
 
   return (
     <section className="contact-section">
-     <h2
-  className="contact-title"
-  style={{ color: "#4f46e5" }}
->
-  Contact Me
-</h2>
+      <h2
+        className="contact-title"
+        style={{ color: "#4f46e5" }}
+      >
+        Contact Me
+      </h2>
 
-<p
-  className="contact-subtitle"
-  style={{ color: "#161802ff" }}
->
-  Let’s discuss opportunities
-</p>
+      <p
+        className="contact-subtitle"
+        style={{ color: "#161802ff" }}
+      >
+        Let’s discuss opportunities
+      </p>
 
 
       <form ref={formRef} onSubmit={sendEmail} className="contact-card">
@@ -67,50 +69,51 @@ const ContactForm = () => {
         <button type="submit" className="submit-btn">
           Submit
         </button>
-        
+
       </form>
-              <div className="contact-icons">
+     <div className="contact-icons">
   {/* Email */}
   <a
     href="mailto:i.ranjan1115@gmail.com"
     className="icon email"
-    data-tooltip="Email"
+    aria-label="Email"
   >
-    ✉
+    <MdEmail />
   </a>
 
   {/* LinkedIn */}
- <a
-  href="https://www.linkedin.com/in/ranjan-kumar-8945691b0/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="icon linkedin"
->
-  in
-</a>
+  <a
+    href="https://www.linkedin.com/in/ranjan-kumar-8945691b0/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="icon linkedin"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn />
+  </a>
+
   {/* GitHub */}
   <a
     href="https://github.com/Ranjanmahatook"
     target="_blank"
-    rel="noreferrer"
+    rel="noopener noreferrer"
     className="icon github"
-    data-tooltip="GitHub"
+    aria-label="GitHub"
   >
-    ⌂
+    <FaGithub />
   </a>
 
   {/* WhatsApp */}
   <a
     href="https://wa.me/917300471976"
     target="_blank"
-    rel="noreferrer"
+    rel="noopener noreferrer"
     className="icon whatsapp"
-    data-tooltip="WhatsApp"
+    aria-label="WhatsApp"
   >
-    ☎
+    <FaWhatsapp />
   </a>
 </div>
-
     </section>
   );
 };
