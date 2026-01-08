@@ -70,40 +70,46 @@ const ContactForm = () => {
         
       </form>
               <div className="contact-icons">
-          <a href="mailto:your@email.com" className="icon email" data-tooltip="Email">
-            ✉
-          </a>
+  {/* Email */}
+  <a
+    href="mailto:i.ranjan1115@gmail.com"
+    className="icon email"
+    data-tooltip="Email"
+  >
+    ✉
+  </a>
 
-          <a
-            href="https://www.linkedin.com/in/your-linkedin"
-            target="_blank"
-            rel="noreferrer"
-            className="icon linkedin"
-            data-tooltip="LinkedIn"
-          >
-            in
-          </a>
+  {/* LinkedIn */}
+ <a
+  href="https://www.linkedin.com/in/ranjan-kumar-8945691b0/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="icon linkedin"
+>
+  in
+</a>
+  {/* GitHub */}
+  <a
+    href="https://github.com/Ranjanmahatook"
+    target="_blank"
+    rel="noreferrer"
+    className="icon github"
+    data-tooltip="GitHub"
+  >
+    ⌂
+  </a>
 
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="icon github"
-            data-tooltip="GitHub"
-          >
-            ⌂
-          </a>
-
-          <a
-            href="https://wa.me/91XXXXXXXXXX"
-            target="_blank"
-            rel="noreferrer"
-            className="icon whatsapp"
-            data-tooltip="WhatsApp"
-          >
-            ☎
-          </a>
-        </div>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/917300471976"
+    target="_blank"
+    rel="noreferrer"
+    className="icon whatsapp"
+    data-tooltip="WhatsApp"
+  >
+    ☎
+  </a>
+</div>
 
     </section>
   );
