@@ -29,7 +29,9 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
+      
+
       <h2 className="contact-title" style={{ color: "#4f46e5" }}>
         Contact Me
       </h2>

@@ -5,11 +5,11 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top-right hamburger */}
+      {/* Top bar */}
       <div className="navbar">
         <div
           className={`hamburger ${open ? "active" : ""}`}
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
         >
           <span></span>
           <span></span>
@@ -17,9 +17,20 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Overlay (click outside) */}
+      {open && (
+        <div
+          className="menu-overlay"
+          onClick={() => setOpen(false)}
+        ></div>
+      )}
+
       {/* Menu */}
       {open && (
-        <div className="nav-menu">
+        <div
+          className="nav-menu"
+          onClick={(e) => e.stopPropagation()}
+        >
           <a href="#skills" onClick={() => setOpen(false)}>Skills</a>
           <a href="#resume" onClick={() => setOpen(false)}>Resume</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>

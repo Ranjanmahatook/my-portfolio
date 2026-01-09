@@ -8,7 +8,7 @@ import ContactForm from "./components/ContactForm";
 import profile from "./assets/profile.jpg";
 
 const App = () => {
-  const fullName = "Ranjan Mahato !";
+  const fullName = "DevOps & Frontend Engineer";
   const [displayName, setDisplayName] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -34,14 +34,16 @@ const App = () => {
             alt="Ranjan Mahato"
             className="profile-img"
           />
-
+          
           {/* Right text */}
           <div className="header-text">
             <h1 className="typewriter">
-              {displayName}
+              
+              <h1>Hi,I'm Ranjan Mahato</h1>
+             <p> {displayName}</p>
             </h1>
 
-            <p>DevOps & Frontend Engineer</p>
+      
           </div>
         </div>
       </header>

@@ -1,6 +1,8 @@
 const Resume = () => {
   return (
     <section className="resume-section">
+       <section id="resume" className="resume-section">
+    </section>
       <h2>Resume</h2>
       <p>Hi, Im Ranjan with 3 years of exp in React js. See my resume</p>
 
