@@ -74,7 +74,7 @@ body {
 .header {
     width: 100%;
     min-height: 240px;
-    background: linear-gradient(90deg, #4c6abb, #90a2ec);
+    background: linear-gradient(90deg, #4e6dc0, #909ed3);
     display: flex;
     align-items: center;
 }
@@ -146,7 +146,13 @@ body {
         transform: translateY(0);
     }
 }
-
+@media (max-width: 768px) {
+    .typewriter {
+        white-space: normal;
+        text-align: center;
+    }
+    
+}
 
 /* ===== SKILLS ===== */
 
