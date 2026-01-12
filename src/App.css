@@ -74,7 +74,7 @@ body {
 .header {
     width: 100%;
     min-height: 240px;
-    background: linear-gradient(90deg, #4e6dc0, #909ed3);
+    background: linear-gradient(90deg, #3968ec, #05134d);
     display: flex;
     align-items: center;
 }
@@ -181,7 +181,7 @@ body {
 }
 
 .skill-card {
-    background: rgb(74, 89, 184);
+    background: rgb(56, 77, 213);
     color: #ffffff;
     padding: 18px 14px;
     /* more horizontal padding */
@@ -201,7 +201,7 @@ body {
 /* Hover: zoom + soft glow */
 .skill-card:hover {
     transform: scale(1.08);
-    background: linear-gradient(135deg, #223464, #8797ea);
+    background: linear-gradient(135deg, #062c94, #010828);
     box-shadow:
         0 20px 45px rgba(6, 6, 6, 0.35),
         0 0 30px rgba(16, 17, 13, 0.45);
@@ -260,7 +260,7 @@ body {
 
 /* ===== Card ===== */
 .contact-card {
-    background: linear-gradient(135deg, #ffffff, #6b81ed);
+    background: linear-gradient(135deg, #ffffff, #213ecf);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 25px 60px #02010d2e;

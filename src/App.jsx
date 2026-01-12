@@ -8,7 +8,7 @@ import ContactForm from "./components/ContactForm";
 import profile from "./assets/profile.jpg";
 
 const App = () => {
-  const fullName = "DevOps & Frontend Engineer";
+  const fullName = "< DevOps & Frontend Engineer />";
   const [displayName, setDisplayName] = useState("");
   const [index, setIndex] = useState(0);
 
