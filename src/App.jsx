@@ -39,7 +39,7 @@ const App = () => {
           <div className="header-text">
             <h1 className="typewriter">
               
-              <h1>Hi,I'm Ranjan Mahato</h1>
+              <h1><p>Hi,I'm </p> Ranjan Mahato</h1>
              <p> {displayName}</p>
             </h1>
 
