@@ -128,31 +128,30 @@ body {
 
 /* Smooth typing appearance */
 .typewriter {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: fadeIn 0.6s ease forwards;
+  display: inline-block;
 }
 
-/* Optional: subtle smooth appearance */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(4px);
-    }
+.typewriter span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(12px);
+  animation-name: fadeUp;
+  animation-duration: 0.45s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@media (max-width: 768px) {
-    .typewriter {
-        white-space: normal;
-        text-align: center;
-    }
-    
-}
+
 
 /* ===== SKILLS ===== */
 
@@ -228,6 +227,54 @@ body {
 
 .resume-btn:hover {
     background: #4338ca;
+}
+.resume-description {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.resume-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.resume-text {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+}
+/* Required so pseudo-element positions correctly */
+.resume-description {
+  position: relative;
+  padding-left: 28px; /* space for the line */
+}
+
+/* The vertical accent line */
+.resume-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 6px;
+  height: 0; /* start hidden */
+  background: #4f46e5; /* same as your theme */
+
+  border-radius: 2px;
+
+  animation: lineReveal 0.9s ease-out forwards;
+}
+
+/* Line grow animation */
+@keyframes lineReveal {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
 }
 
 /* ===== CONTACT ===== */
@@ -422,3 +469,61 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* ===================== GLOBAL FOOTER ===================== */
+
+.global-footer {
+  margin-top: 80px;
+  padding: 32px 20px;
+  background: #0f172a; /* dark navy */
+  color: #e5e7eb;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footer-links {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links span {
+  margin: 0 6px;
+}
+
+.back-to-top {
+  margin-top: 18px;
+  background: transparent;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.back-to-top:hover {
+  background: #1f2937;
+  transform: translateY(-2px);
+}
+
+/* ===================== DARK MODE READY ===================== */
+/* If you later add dark-mode toggle, footer already supports it */

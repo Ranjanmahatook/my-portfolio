@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Resume from "./components/Resume";
 import ContactForm from "./components/ContactForm";
 import profile from "./assets/profile.jpg";
+import Footer from "./components/Footer";
 
 const App = () => {
   const fullName = "< DevOps & Frontend Engineer />";
@@ -37,11 +37,14 @@ const App = () => {
           
           {/* Right text */}
           <div className="header-text">
-            <h1 className="typewriter">
-              
-              <h1><p>Hi,I'm </p> Ranjan Mahato</h1>
-             <p> {displayName}</p>
-            </h1>
+           <h1 className="typewriter">
+  {"Ranjan Mahato".split("").map((char, index) => (
+    <span key={index} style={{ animationDelay: `${index * 0.08}s` }}>
+      {char === " " ? "\u00A0" : char}
+    </span>
+  ))}
+</h1>
+ <p> {displayName}</p>
 
       
           </div>
@@ -52,6 +55,7 @@ const App = () => {
       <Skills />
       <Resume />
       <ContactForm />
+      <Footer />
     </div>
   );
 };
