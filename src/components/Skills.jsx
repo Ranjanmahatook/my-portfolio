@@ -1,4 +1,13 @@
 import skillsImage from "../assets/img.jpg"; // adjust path if needed
+import {
+  FaGithub,
+  FaReact,
+  FaAws,
+  FaDocker,
+  FaJsSquare,
+  
+} from "react-icons/fa";
+import { SiKubernetes } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -42,6 +51,37 @@ const Skills = () => {
            <div className="skill-card">Subnets</div>
           <div className="skill-card">AWS Lambda</div>
         </div>
+<div className="dev-tools">
+  <div className="dev-icon-wrapper">
+    <FaGithub className="dev-icon github" />
+    <span className="dev-label">GitHub</span>
+  </div>
+
+  <div className="dev-icon-wrapper">
+    <FaJsSquare className="dev-icon js" />
+    <span className="dev-label">JavaScript</span>
+  </div>
+
+  <div className="dev-icon-wrapper">
+    <FaReact className="dev-icon react" />
+    <span className="dev-label">React</span>
+  </div>
+
+  <div className="dev-icon-wrapper">
+    <FaAws className="dev-icon aws" />
+    <span className="dev-label">AWS</span>
+  </div>
+<div className="dev-icon-wrapper">
+  <SiKubernetes className="dev-icon kubernetes" />
+  <span className="dev-label">Kubernetes</span>
+</div>
+
+  <div className="dev-icon-wrapper">
+    <FaDocker className="dev-icon docker" />
+    <span className="dev-label">Docker</span>
+  </div>
+</div>
+
 
        
       </div>

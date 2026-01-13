@@ -222,6 +222,24 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+/* About profile image */
+.skills-profile {
+  width: 140px;          /* square size */
+  height: 140px; 
+  margin-top: 0px;        /* same as width */
+  object-fit: cover;     /* keeps image cropped nicely */
+  border-radius: 10px;   /* 🔹 small radius = square with soft corners */
+  border: 3px solid #4f46e5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-profile:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 18px 40px rgba(79, 70, 229, 0.35);
+}
+
+/* Hover interaction (professional, not flashy) */
 
 /* Subtle hover polish */
 .skills-image:hover {
@@ -255,6 +273,97 @@ body {
     transform: translateY(0);
   }
 }
+/* ===== Dev Tools Section ===== */
+.dev-tools {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* Icon base */
+.dev-icon {
+  font-size: 70px;
+  cursor: pointer;
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Individual colors */
+.dev-icon.github {
+  color: #24292e;
+}
+
+.dev-icon.js {
+  color: #f7df1e;
+}
+
+.dev-icon.react {
+  color: #61dafb;
+}
+
+.dev-icon.aws {
+  color: #ff9900;
+}
+.dev-icon.kubernetes {
+  color: #326ce5; /* Official Kubernetes blue */
+}
+
+.dev-icon.docker {
+  color: #2496ed;
+}
+
+/* Hover effect */
+.dev-icon:hover {
+  transform: translateY(-8px) scale(1.1);
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.25));
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Wrapper for icon + label */
+.dev-icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label hidden by default */
+.dev-label {
+  position: absolute;
+  bottom: -34px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Show label on hover */
+.dev-icon-wrapper:hover .dev-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* ===== RESUME ===== */
 

@@ -8,7 +8,7 @@ import profile from "./assets/profile.jpg";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const fullName = "< DevOps & Frontend Engineer />";
+  const fullName = "< Frontend & DevOps Engineer />";
   const [displayName, setDisplayName] = useState("");
   const [index, setIndex] = useState(0);
 

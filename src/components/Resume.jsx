@@ -14,6 +14,11 @@ const Resume = () => {
           with cross-functional teams in enterprise environments.
         </p>
       </div>
+      <img
+    src={aboutImg}
+    alt="Profile"
+    className="skills-profile"
+  />
   {/* ===== Experience Block 2 (kept, but structured) ===== */}
       <div className="resume-description">
         <h5 className="resume-role">Senior Analyst at Capgemini -  Nov 2024 - Present</h5>
