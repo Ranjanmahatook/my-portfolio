@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import Resume from "./components/Resume";
+import Skills from "./components/Skills";
 import ContactForm from "./components/ContactForm";
 import profile from "./assets/profile.jpg";
 import Footer from "./components/Footer";
@@ -52,8 +52,8 @@ const App = () => {
       </header>
 
       <Navbar />
-      <Skills />
       <Resume />
+      <Skills />
       <ContactForm />
       <Footer />
     </div>
