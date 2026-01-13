@@ -38,6 +38,7 @@ const App = () => {
           {/* Right text */}
           <div className="header-text">
            <h1 className="typewriter">
+            <p>Hi, I'm</p>
   {"Ranjan Mahato".split("").map((char, index) => (
     <span key={index} style={{ animationDelay: `${index * 0.08}s` }}>
       {char === " " ? "\u00A0" : char}
