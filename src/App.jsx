@@ -8,7 +8,7 @@ import profile from "./assets/profile.jpg";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const fullName = "< Frontend & DevOps Engineer />";
+  const fullName = "< MERN Stack / React.js,Node.js />";
   const [displayName, setDisplayName] = useState("");
   const [index, setIndex] = useState(0);
 

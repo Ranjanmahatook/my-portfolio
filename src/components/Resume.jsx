@@ -8,10 +8,7 @@ const Resume = () => {
       <div className="resume-about">
         <h2 className="resume-heading">About Me</h2>
         <p className="text-center text-xl font-semibold">
-          I am Ranjan, a software professional with around 3 years of experience
-          working on React.js–based applications. I focus on building clean,
-          responsive, and user-friendly interfaces while collaborating closely
-          with cross-functional teams in enterprise environments.
+         I am Ranjan, a MERN Stack Developer with around 3.5 years of experience in designing and developing full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I specialize in building scalable backend APIs, implementing secure authentication mechanisms, and creating responsive, user-centric frontend interfaces. I collaborate effectively with cross-functional teams to deliver high-quality solutions in enterprise environments.
         </p>
       </div>
       <img
