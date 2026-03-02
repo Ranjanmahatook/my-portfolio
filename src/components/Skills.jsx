@@ -23,7 +23,7 @@ const Skills = () => {
           />
         </div>
         <div className="skills-grid">
-          <div className="skill-card"> Front-End</div>
+          <div className="skill-card"> React.js</div>
           <div className="skill-card">HTML5</div>
           <div className="skill-card">CSS3</div>
           <div className="skill-card">Tailwind CSS</div>
@@ -37,8 +37,8 @@ const Skills = () => {
           <div className="skill-card">Kubernetes</div>
           <div className="skill-card">MySql</div>
           <div className="skill-card">mongoDb</div>
-          <div className="skill-card">Core Java</div>
-           <div className="skill-card">SpringBoot</div>
+          <div className="skill-card">Node.js</div>
+           <div className="skill-card">Express.js</div>
           <div className="skill-card">MicroServices</div>
           <div className="skill-card">EC2</div>
           <div className="skill-card">Jenkins</div>
